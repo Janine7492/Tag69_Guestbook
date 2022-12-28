@@ -1,0 +1,12 @@
+<% persons.forEach((person)=>{ %>
+    <article class="messageArticle">
+        <p class="messageIntro"> <span class="big">
+                <%= person.firstname %>
+            </span> <span class="mail">
+                <%= person.mail %>
+            </span> schreibt:</p>
+        <p class="messageText">
+            <%= person.message %>
+        </p>
+    </article>
+    <% }) %>

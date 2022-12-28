@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: rgb(242, 230, 216);
+}
+
+header {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header h2 {
+    font-size: 3rem;
+}
+
+header img {
+    width: 20%;
+    margin-bottom: -90px;
+    object-fit: cover;
+}
+
+main {
+    width: 55%;
+    max-width: 760px;
+    margin-left: 10%;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+}
+
+main form label {
+    margin: 1rem 0;
+}
+
+main form input {
+    line-height: 2;
+    padding: 0.5rem 1.5rem;
+    background-color: #E7E7E7;
+    border: none;
+    box-shadow: 2px 2px 5px 2px dimgray;
+}
+
+.submitBtn {
+    background-color: #E7E7E7;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.submitBtn:active {
+    box-shadow: inset 2px 2px 5px 2px dimgray;
+}
+
+#personMessage {
+    height: 80px;
+}
+
+#textUnderMessage {
+    font-size: 1rem;
+    color: dimgray;
+    margin: 1rem 0;
+}
+
+.messageArticle {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.messageIntro {
+    font-size: 1.6rem;
+
+}
+
+.big {
+    font-weight: bolder;
+}
+
+.mail {
+    color: rgb(40, 40, 133);
+}
+
+.messageText {
+    padding-left: 3rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.error {
+    color: crimson;
+    margin: 1rem;
+}

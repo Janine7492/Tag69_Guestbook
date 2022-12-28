@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teufelsrochen Guestbook</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/manta_ray.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h2>Teufelsrochen Gästebuch</h2>
+        <img src="/img/logo.png" alt="company logo">
+    </header>
+    <main>
+        <form method="post" action="/add">
+            <label for="personFirstname">Vorname</label>
+            <input type="text" name="personFirstname" id="personFirstname">
+
+            <label for="personLastname">Nachname</label>
+            <input type="text" name="personLastname" id="personLastname">
+
+            <label for="personMail">E-Mail-Adresse</label>
+            <input type="email" name="personMail" id="personMail">
+
+            <label for="personMessage">Ihre Nachricht</label>
+            <input type="text" name="personMessage" id="personMessage">
+            <p id="textUnderMessage">Mindestens 5 und maximal 200 Zeichen</p>
+
+            <input type="submit" value="Absenden" class="submitBtn">
+
+            <% if(errors){ %>
+                <p class="error">Ups, da hat etwas nicht funktioniert!</p>
+                <p class="error">Bitte stellen Sie sicher, dass alle Felder ausgefüllt sind und eine korrekte
+                    E-Mail-Adresse angegeben
+                    ist!</p>
+                <% } %>
+        </form>
+        <%- include('./partials/messages', {persons}) %>
+    </main>
+</body>
+
+</html>
